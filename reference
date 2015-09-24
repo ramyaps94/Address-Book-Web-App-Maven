@@ -1,0 +1,3 @@
+ when(addressDAO.create(address)).thenReturn("Successfully created");
+        this.mockMvc.perform(post(POSTADDRESS).contentType(MediaType.APPLICATION_JSON).content(contentData))
+                .andDo(print()) --> to print the error message

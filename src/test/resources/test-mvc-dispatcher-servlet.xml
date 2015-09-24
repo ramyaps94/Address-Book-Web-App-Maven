@@ -18,4 +18,8 @@
         <constructor-arg value="com.webapp.DAO.CountryDAO" />
     </bean>
 
+    <bean id="addressDAO" class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.webapp.DAO.AddressDAO" />
+    </bean>
+
 </beans>
